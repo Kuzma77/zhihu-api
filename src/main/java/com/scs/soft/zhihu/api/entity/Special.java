@@ -2,6 +2,9 @@ package com.scs.soft.zhihu.api.entity;
 
 import lombok.Builder;
 import lombok.Data;
+
+import java.util.Date;
+
 /**
  * @author wl_sun
  * @description TODO
@@ -14,7 +17,7 @@ public class Special {
     private String title;
     private String introduction;
     private String banner;
-    private String viewCount;
-    private String followersCount;
-    private String updated;
+    private Integer viewCount;
+    private Integer followersCount;
+    private Date updated;
 }
