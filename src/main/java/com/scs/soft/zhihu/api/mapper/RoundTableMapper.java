@@ -31,8 +31,9 @@ public interface RoundTableMapper {
     @Results({
             @Result(id = true,property = "roundTableId", column = "id",javaType = String.class),
             @Result(property = "name",column = "name",javaType = String.class),
-            @Result(property = "UrlToken",column = "UrlToken",javaType = String.class),
+            @Result(property = "UrlToken",column = "url_token",javaType = String.class),
             @Result(property = "banner",column = "banner",javaType = String.class),
+            @Result(property = "tinyBanner",column = "tiny_banner",javaType = String.class),
             @Result(property = "visitsCount",column = "visitsCount",javaType = Integer.class),
             @Result(property = "includeCount",column = "includeCount",javaType = Integer.class),
     })
